@@ -11,7 +11,7 @@ export interface TextInputProps extends ComponentProps<typeof Input> {
 export function TextInput({ label, prefix, error, ...props }: TextInputProps) {
   return (
     <InputBox label={label} error={error}>
-      <TextInputContainer error={!!error}>
+      <TextInputContainer errored={!!error}>
         {!!prefix && <Prefix>{prefix}</Prefix>}
         <Input {...props} />
       </TextInputContainer>
