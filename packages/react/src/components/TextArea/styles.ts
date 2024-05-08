@@ -29,7 +29,7 @@ export const TextAreaInput = styled('textarea', {
   },
 
   variants: {
-    error: {
+    errored: {
       true: {
         borderColor: '$danger',
       },
@@ -37,6 +37,6 @@ export const TextAreaInput = styled('textarea', {
   },
 
   defaultVariants: {
-    error: false,
+    errored: false,
   },
 })

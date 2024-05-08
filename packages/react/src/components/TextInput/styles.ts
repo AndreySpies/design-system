@@ -19,7 +19,7 @@ export const TextInputContainer = styled('div', {
   },
 
   variants: {
-    error: {
+    errored: {
       true: {
         borderColor: '$danger',
       },
@@ -27,7 +27,7 @@ export const TextInputContainer = styled('div', {
   },
 
   defaultVariants: {
-    error: false,
+    errored: false,
   },
 })
 

@@ -14,7 +14,7 @@ export function Checkbox({ label, error, ...props }: CheckboxProps) {
   return (
     <InputBox error={error}>
       <CheckboxBox>
-        <CheckboxContainer {...props} error={!!error}>
+        <CheckboxContainer {...props} errored={!!error}>
           <CheckboxIndicator asChild>
             <Check weight="bold" />
           </CheckboxIndicator>

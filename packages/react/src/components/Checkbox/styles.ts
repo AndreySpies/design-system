@@ -39,7 +39,7 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   },
 
   variants: {
-    error: {
+    errored: {
       true: {
         borderColor: '$danger',
       },
@@ -47,7 +47,7 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   },
 
   defaultVariants: {
-    error: false,
+    errored: false,
   },
 })
 
