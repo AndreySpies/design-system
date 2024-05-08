@@ -5,9 +5,10 @@ export const colors = {
   richBlack: '#000014',
 
   gray100: '#e0e0e0',
-  gray200: '#a0a6ae',
-  gray400: '#7a828e',
-  gray500: '#4a5057',
+  gray200: '#CCCCCC',
+  gray300: '#ADADAD',
+  gray400: '#8F8F8F',
+  gray500: '#666F7A',
   gray600: '#40454c',
   gray700: '#2f3238',
   gray800: '#1f1f1f',
