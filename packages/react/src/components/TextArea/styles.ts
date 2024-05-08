@@ -24,7 +24,7 @@ export const TextAreaInput = styled('textarea', {
     cursor: 'not-allowed',
   },
 
-  '&:placeholder': {
+  '&::placeholder': {
     color: '$gray400',
   },
 

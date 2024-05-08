@@ -38,10 +38,11 @@ export const Button = styled('button', {
         color: '$smokedWhite',
 
         '&:not(:disabled):hover': {
-          // backgroundColor: '$smokedWhite',
-          // borderColor: '$smokedWhite',
-          // color: '$gray900',
           borderColor: '$gray600',
+        },
+
+        '&:focus': {
+          borderColor: '$primary',
         },
       },
       primary: {
@@ -52,6 +53,10 @@ export const Button = styled('button', {
         '&:not(:disabled):hover': {
           backgroundColor: '$primaryLight',
           borderColor: '$primaryLight',
+        },
+
+        '&:focus': {
+          borderColor: '$smokedWhite',
         },
       },
     },

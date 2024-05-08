@@ -10,7 +10,17 @@ export default {
     disabled: false,
   },
   argTypes: {
-    label: {},
+    label: {
+      control: {
+        type: 'text',
+      },
+    },
+    size: {
+      options: ['default', 'small'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
     disabled: {
       control: {
         type: 'boolean',

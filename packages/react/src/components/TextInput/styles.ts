@@ -2,12 +2,11 @@ import { styled } from '../../styles'
 
 export const TextInputContainer = styled('div', {
   backgroundColor: '$gray900',
-  padding: '$3 $4',
   borderRadius: '$sm',
   boxSizing: 'border-box',
   border: '2px solid $gray900',
   display: 'flex',
-  alignItems: 'baseline',
+  alignItems: 'center',
 
   '&:has(input:focus)': {
     borderColor: '$primary',
@@ -19,6 +18,14 @@ export const TextInputContainer = styled('div', {
   },
 
   variants: {
+    size: {
+      small: {
+        padding: '$2 $3',
+      },
+      default: {
+        padding: '$3 $4',
+      },
+    },
     errored: {
       true: {
         borderColor: '$danger',
@@ -27,6 +34,7 @@ export const TextInputContainer = styled('div', {
   },
 
   defaultVariants: {
+    size: 'default',
     errored: false,
   },
 })
@@ -55,7 +63,7 @@ export const Input = styled('input', {
     cursor: 'not-allowed',
   },
 
-  '&:placeholder': {
+  '&::placeholder': {
     color: '$gray400',
   },
 })
