@@ -60,7 +60,6 @@ export function Dropdown({ options, children, name }: DropdownProps) {
         const buttonHeight = buttonRect.height
         const dropdownHeight = dropdownRect.height
 
-        // Check if there's enough space below, if not, position above
         const spaceBelow = window.innerHeight - buttonTop - buttonHeight
         if (spaceBelow < dropdownHeight) {
           dropdownRef.current.style.bottom = `${buttonHeight + 6}px`
