@@ -1,5 +1,11 @@
 # @spies-ui/react
 
+## 1.0.3
+
+### Patch Changes
+
+- Fix package.json
+
 ## 1.0.2
 
 ### Patch Changes
