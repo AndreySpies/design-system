@@ -1,5 +1,3 @@
-'use client'
-
 import { ComponentProps } from 'react'
 import { AvatarContainer, AvatarFallback, AvatarImage } from './styles'
 import { User } from 'phosphor-react'

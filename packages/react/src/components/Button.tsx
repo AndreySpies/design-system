@@ -1,5 +1,3 @@
-'use client'
-
 import { ComponentProps, ElementType } from 'react'
 import { styled } from '../styles'
 

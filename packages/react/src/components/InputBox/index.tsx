@@ -1,5 +1,3 @@
-'use client'
-
 import { Text } from '../Text'
 import { InputContainer } from './styles'
 

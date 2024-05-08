@@ -1,5 +1,3 @@
-'use client'
-
 import { styled, keyframes } from '../../styles'
 import * as Checkbox from '@radix-ui/react-checkbox'
 
