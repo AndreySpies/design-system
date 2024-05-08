@@ -1,5 +1,11 @@
 # @spies-ui/react
 
+## 1.0.4
+
+### Patch Changes
+
+- add use client directive
+
 ## 1.0.3
 
 ### Patch Changes

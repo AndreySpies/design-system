@@ -1,3 +1,5 @@
+'use client'
+
 import { ComponentProps, forwardRef, ElementRef } from 'react'
 import { InputBox } from '../InputBox'
 import { TextAreaInput } from './styles'

@@ -1,3 +1,5 @@
+'use client'
+
 import { Check } from 'phosphor-react'
 import { CheckboxContainer, CheckboxIndicator, CheckboxBox } from './styles'
 import { Text } from '../Text'
