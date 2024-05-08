@@ -1,0 +1,4 @@
+{
+  "extends": "@spies-ui/ts-config/base.json",
+  "include": ["src"]
+}
