@@ -7,13 +7,18 @@ export interface TextInputProps
   label?: string
   prefix?: string
   error?: string
+  hint?: string
+  required?: boolean
   size?: 'default' | 'small'
 }
 
 export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
-  ({ label, prefix, error, size, ...props }: TextInputProps, ref) => {
+  (
+    { label, prefix, error, hint, required, size, ...props }: TextInputProps,
+    ref,
+  ) => {
     return (
-      <InputBox label={label} error={error}>
+      <InputBox label={label} error={error} hint={hint} required={required}>
         <TextInputContainer errored={!!error} size={size}>
           {!!prefix && <Prefix>{prefix}</Prefix>}
           <Input ref={ref} {...props} />

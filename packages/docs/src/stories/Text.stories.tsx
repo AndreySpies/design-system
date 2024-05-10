@@ -31,7 +31,22 @@ export default {
       },
     },
     variant: {
-      options: ['default', 'primary', 'success', 'danger', 'warning'],
+      options: [
+        'default',
+        'primary',
+        'danger',
+        'success',
+        'warning',
+        'gray100',
+        'gray200',
+        'gray300',
+        'gray400',
+        'gray500',
+        'gray600',
+        'gray700',
+        'gray800',
+        'gray900',
+      ],
       control: {
         type: 'inline-radio',
       },

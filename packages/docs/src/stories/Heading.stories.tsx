@@ -7,10 +7,32 @@ export default {
   args: {
     children: 'Lorem ipsum',
     size: 'md',
+    variant: 'default',
   },
   argTypes: {
     size: {
       options: ['sm', 'md', 'lg', '2xl', '4xl', '5xl', '6xl'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    variant: {
+      options: [
+        'default',
+        'primary',
+        'danger',
+        'success',
+        'warning',
+        'gray100',
+        'gray200',
+        'gray300',
+        'gray400',
+        'gray500',
+        'gray600',
+        'gray700',
+        'gray800',
+        'gray900',
+      ],
       control: {
         type: 'inline-radio',
       },

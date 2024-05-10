@@ -8,6 +8,8 @@ export default {
     label: 'Accept terms of service',
     disabled: false,
     error: '',
+    hint: '',
+    required: false,
   },
   argTypes: {
     disabled: {

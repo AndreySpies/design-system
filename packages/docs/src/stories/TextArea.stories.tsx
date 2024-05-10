@@ -5,8 +5,9 @@ export default {
   title: 'Form/Text Area',
   component: TextArea,
   args: {
-    error: '',
     label: '',
+    error: '',
+    hint: '',
     placeholder: '',
     disabled: false,
   },

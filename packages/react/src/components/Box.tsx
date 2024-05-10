@@ -23,6 +23,10 @@ export const Box = styled('div', {
       },
     },
   },
+
+  defaultVariants: {
+    background: 'default',
+  },
 })
 
 export interface BoxProps extends ComponentProps<typeof Box> {

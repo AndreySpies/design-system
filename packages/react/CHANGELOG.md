@@ -1,5 +1,11 @@
 # @spies-ui/react
 
+## 1.0.7
+
+### Patch Changes
+
+- Add and fix components features and variants
+
 ## 1.0.6
 
 ### Patch Changes

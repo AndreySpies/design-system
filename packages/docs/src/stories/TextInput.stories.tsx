@@ -7,6 +7,8 @@ export default {
   args: {
     error: '',
     prefix: '',
+    hint: '',
+    required: false,
     disabled: false,
   },
   argTypes: {
@@ -32,7 +34,8 @@ export default {
 export const Primary: StoryObj<TextInputProps> = {
   args: {
     label: 'Username',
-    placeholder: 'Type your name',
+    placeholder: 'Type your username',
+    hint: 'Your username can only contain letters and hyphens',
   },
 }
 

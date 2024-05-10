@@ -4,6 +4,7 @@ import * as Checkbox from '@radix-ui/react-checkbox'
 export const CheckboxBox = styled('div', {
   display: 'flex',
   gap: '$2',
+  alignItems: 'center',
 
   '&:has(button:disabled)': {
     opacity: 0.5,
