@@ -2,7 +2,7 @@ export const colors = {
   black: '#000000',
   white: '#ffffff',
   smokedWhite: '#f5f5f5',
-  richBlack: '#000014',
+  night: '#0A0A0A',
 
   gray100: '#e0e0e0',
   gray200: '#CCCCCC',
