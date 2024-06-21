@@ -9,5 +9,14 @@ export default {
 export const Primary: StoryObj<AvatarProps> = {
   args: {
     src: '',
+    size: 'default',
+  },
+  argTypes: {
+    size: {
+      options: ['default', 'large'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
   },
 }
