@@ -4,11 +4,12 @@ import { User } from 'phosphor-react'
 
 export interface AvatarProps extends ComponentProps<typeof AvatarImage> {
   size: 'default' | 'large'
+  border: 'none' | 'default' | 'primary' | 'success' | 'danger' | 'warning'
 }
 
 export function Avatar(props: AvatarProps) {
   return (
-    <AvatarContainer size={props.size}>
+    <AvatarContainer size={props.size} border={props.border}>
       <AvatarImage {...props} />
 
       <AvatarFallback delayMs={600}>

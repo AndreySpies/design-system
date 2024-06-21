@@ -10,10 +10,25 @@ export const Primary: StoryObj<AvatarProps> = {
   args: {
     src: '',
     size: 'default',
+    border: 'none',
   },
   argTypes: {
     size: {
       options: ['default', 'large'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    border: {
+      options: [
+        'none',
+        'default',
+        'primary',
+        'success',
+        'danger',
+        'warning',
+        'primaryLight',
+      ],
       control: {
         type: 'inline-radio',
       },
