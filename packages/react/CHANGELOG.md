@@ -1,5 +1,11 @@
 # @spies-ui/react
 
+## 1.0.9
+
+### Patch Changes
+
+- Add border to avatar
+
 ## 1.0.8
 
 ### Patch Changes

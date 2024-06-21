@@ -18,10 +18,34 @@ export const AvatarContainer = styled(Avatar.Root, {
         height: '$20',
       },
     },
+    border: {
+      none: {
+        border: '0',
+      },
+      default: {
+        border: '2px solid $smokedWhite',
+      },
+      primary: {
+        border: '2px solid $primary',
+      },
+      primaryLight: {
+        border: '2px solid $primaryLight',
+      },
+      success: {
+        border: '2px solid $success',
+      },
+      danger: {
+        border: '2px solid $danger',
+      },
+      warning: {
+        border: '2px solid $warning',
+      },
+    },
   },
 
   defaultVariants: {
     size: 'default',
+    border: 'none',
   },
 })
 
