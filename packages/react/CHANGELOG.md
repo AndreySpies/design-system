@@ -1,5 +1,11 @@
 # @spies-ui/react
 
+## 1.0.10
+
+### Patch Changes
+
+- 87fd05e: fix avatar layout and add new props to inputs
+
 ## 1.0.9
 
 ### Patch Changes
