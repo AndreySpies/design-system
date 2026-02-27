@@ -11,47 +11,6 @@ export const CheckboxBox = styled('div', {
   },
 })
 
-export const CheckboxContainer = styled(Checkbox.Root, {
-  all: 'unset',
-  width: '$6',
-  height: '$6',
-  backgroundColor: '$gray900',
-  borderRadius: '$xs',
-  lineHeight: 0,
-  cursor: 'pointer',
-  overflow: 'hidden',
-  boxSizing: 'border-box',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  border: '2px solid $gray900',
-
-  '&[data-state="checked"]': {
-    backgroundColor: '$primary',
-    borderColor: '$primary',
-  },
-
-  '&:focus': {
-    border: '2px solid $primary',
-  },
-
-  '&:disabled': {
-    cursor: 'not-allowed',
-  },
-
-  variants: {
-    errored: {
-      true: {
-        borderColor: '$danger',
-      },
-    },
-  },
-
-  defaultVariants: {
-    errored: false,
-  },
-})
-
 const slideIn = keyframes({
   from: {
     transform: 'translateX(-100%)',
@@ -81,5 +40,63 @@ export const CheckboxIndicator = styled(Checkbox.Indicator, {
 
   '&[data-state="unchecked"]': {
     animation: `${slideOut} 100ms ease-out`,
+  },
+})
+
+export const CheckboxContainer = styled(Checkbox.Root, {
+  all: 'unset',
+  width: '$6',
+  height: '$6',
+  backgroundColor: '$gray900',
+  lineHeight: 0,
+  cursor: 'pointer',
+  overflow: 'hidden',
+  boxSizing: 'border-box',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  border: '2px solid $gray900',
+
+  '&[data-state="checked"]': {
+    backgroundColor: '$primary',
+    borderColor: '$primary',
+  },
+
+  '&:focus': {
+    border: '2px solid $primary',
+  },
+
+  '&:disabled': {
+    cursor: 'not-allowed',
+  },
+
+  variants: {
+    errored: {
+      true: {
+        borderColor: '$danger',
+      },
+    },
+    radius: {
+      px: { borderRadius: '$px' },
+      xs: { borderRadius: '$xs' },
+      sm: { borderRadius: '$sm' },
+      md: {
+        borderRadius: '$md',
+        [`& ${CheckboxIndicator}`]: { width: '$3', height: '$3' },
+      },
+      lg: {
+        borderRadius: '$lg',
+        [`& ${CheckboxIndicator}`]: { width: '$3', height: '$3' },
+      },
+      full: {
+        borderRadius: '$full',
+        [`& ${CheckboxIndicator}`]: { width: '$3', height: '$3' },
+      },
+    },
+  },
+
+  defaultVariants: {
+    errored: false,
+    radius: 'md',
   },
 })

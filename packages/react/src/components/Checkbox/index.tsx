@@ -10,6 +10,10 @@ export interface CheckboxProps
   error?: string
   hint?: string
   required?: boolean
+  labelProps?: Omit<ComponentProps<typeof Text>, 'children'>
+  errorProps?: Omit<ComponentProps<typeof Text>, 'children'>
+  hintProps?: Omit<ComponentProps<typeof Text>, 'children'>
+  requiredAsteriskProps?: Omit<ComponentProps<typeof Text>, 'children'>
 }
 
 export function Checkbox({
@@ -17,10 +21,14 @@ export function Checkbox({
   error,
   hint,
   required,
+  labelProps,
+  errorProps,
+  hintProps,
+  requiredAsteriskProps,
   ...props
 }: CheckboxProps) {
   return (
-    <InputBox error={error} hint={hint}>
+    <InputBox error={error} hint={hint} errorProps={errorProps} hintProps={hintProps}>
       <CheckboxBox>
         <CheckboxContainer {...props} errored={!!error}>
           <CheckboxIndicator asChild>
@@ -29,12 +37,12 @@ export function Checkbox({
         </CheckboxContainer>
         <>
           {!!label && (
-            <Text as="span" size="sm">
+            <Text as="span" size="sm" {...labelProps}>
               {label}
             </Text>
           )}
           {required && (
-            <Text as="span" size="sm" variant="danger">
+            <Text as="span" size="sm" variant="danger" {...requiredAsteriskProps}>
               *
             </Text>
           )}
