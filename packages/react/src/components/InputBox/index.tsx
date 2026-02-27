@@ -1,4 +1,4 @@
-import { Text } from '../Text'
+import { Text, TextProps } from '../Text'
 import { InputContainer, TextBox } from './styles'
 
 export interface InputProps {
@@ -7,6 +7,10 @@ export interface InputProps {
   error?: string
   hint?: string
   required?: boolean
+  labelProps?: Omit<TextProps, 'children'>
+  errorProps?: Omit<TextProps, 'children'>
+  hintProps?: Omit<TextProps, 'children'>
+  requiredAsteriskProps?: Omit<TextProps, 'children'>
 }
 
 export function InputBox({
@@ -15,17 +19,21 @@ export function InputBox({
   hint,
   required,
   children,
+  labelProps,
+  errorProps,
+  hintProps,
+  requiredAsteriskProps,
 }: InputProps) {
   return (
     <InputContainer>
       <div>
         {!!label && (
-          <Text as="span" size={'sm'}>
+          <Text as="span" size={'sm'} {...labelProps}>
             {label}
           </Text>
         )}
         {required && (
-          <Text as="span" size={'sm'} variant="danger">
+          <Text as="span" size={'sm'} variant="danger" {...requiredAsteriskProps}>
             &nbsp;*
           </Text>
         )}
@@ -33,12 +41,12 @@ export function InputBox({
       {children}
       <TextBox>
         {!!error && (
-          <Text size="xs" variant="danger">
+          <Text size="xs" variant="danger" {...errorProps}>
             {error}
           </Text>
         )}
         {!error && hint && (
-          <Text size="xs" variant="gray200">
+          <Text size="xs" variant="gray200" {...hintProps}>
             {hint}
           </Text>
         )}

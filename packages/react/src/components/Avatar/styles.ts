@@ -52,7 +52,8 @@ export const AvatarContainer = styled(Avatar.Root, {
 export const AvatarImage = styled(Avatar.Image, {
   width: '100%',
   height: '100%',
-  objectFix: 'cover',
+  objectFit: 'cover',
+  objectPosition: 'center',
   borderRadius: 'inherit',
 })
 export const AvatarFallback = styled(Avatar.Fallback, {

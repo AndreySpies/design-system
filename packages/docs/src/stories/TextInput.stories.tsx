@@ -28,6 +28,18 @@ export default {
         type: 'boolean',
       },
     },
+    labelProps: {
+      description: 'Accepts the same props as the Text component',
+    },
+    errorProps: {
+      description: 'Accepts the same props as the Text component',
+    },
+    hintProps: {
+      description: 'Accepts the same props as the Text component',
+    },
+    requiredAsteriskProps: {
+      description: 'Accepts the same props as the Text component',
+    },
   },
 } as Meta<TextInputProps>
 
@@ -54,5 +66,17 @@ export const Errored: StoryObj<TextInputProps> = {
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
     prefix: 'linkedin.com/',
+  },
+}
+
+export const CustomTextProps: StoryObj<TextInputProps> = {
+  args: {
+    label: 'Username',
+    placeholder: 'Type your username',
+    hint: 'Your username can only contain letters and hyphens',
+    required: true,
+    labelProps: { variant: 'primary', size: 'md' },
+    hintProps: { variant: 'primary', size: 'sm' },
+    requiredAsteriskProps: { variant: 'warning', size: 'md' },
   },
 }
