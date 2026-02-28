@@ -1,5 +1,11 @@
 # @spies-ui/react
 
+## 1.0.11
+
+### Patch Changes
+
+- 02f8eb8: add radio select
+
 ## 1.0.10
 
 ### Patch Changes
